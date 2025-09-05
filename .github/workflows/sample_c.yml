@@ -46,6 +46,13 @@ jobs:
       - name: Report failure
         run: echo "Build or tests failed!"
 
+  report_always:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Report always
+        run: echo "This runs regardless of the build outcome."
+
 
 
       

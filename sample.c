@@ -1,6 +1,10 @@
 #include <stdio.h>
+#include "sample.h"
 
-int main() {
-    printf("Hello, World!\n");
-    return 0;
+int addCorrect(int a, int b) {
+    return a + b;
+}
+
+int addWrong(int a, int b) {
+    return a - b;
 }
